@@ -1,0 +1,65 @@
+TITLE
+Steven Ruppert, David Steger  15 Puzzle
+
+PROBLEM DESCRIPTION
+Our project created a console-based user interface to the "15 Puzzle." This is a puzzle on a 4x4 grid with 
+squares that are to be moved around to solve the puzzle. There is one empty square so that
+the pieces have space to move around. The puzzle is solved when all fifteen of the squares are placed  
+in ascending order ( the squares are numbered 1-15 ). The program also allows the user to define the
+dimentions of the puzzle, making large puzzles for the smart person, or small puzzles for the 
+average 'joe.'
+
+PROGRAM DOCUMENTATION
+Our program comes with instructions that are printed to the console. Follow them. First, when prompted for the instructions,
+you are encouraged to say 'yes.' Then, if you have a previous game saved, chose to load it. Otherwise chose 'no.' Finally, 
+use the w, s, a, and d keys on the keyboard to navigate the puzzle and slide pieces around. At any time, type 'save' to 
+save the game to a user-specified file, or 'quit' to exit the game. When the puzzle is solved, a victory message will 
+be displayed. At this point, you are done. 
+
+The program is designed around a Puzzle class, written to represent an n x n slide puzzle. There are interfaces
+for accessing the board directly, as well as overloaded functions for constructing puzzles of various dimensions,
+and 2 methods for swapping tiles. The most useful extension to the class would be a self-solving algorithm,
+which can use the swap() method internally according to whatever rules the algorithm might follow. 
+
+REQUIREMENTS
+
+1. New class with non-default constructor...Puzzle.h (lines 22-24) and Puzzle.cpp (lines 12-23)
+   two private data members...Puzzle.h (lines 15-20) Puzzle.cpp ( used everywhere )
+   symmetric overloaded >> and << operators... Puzzle.cpp ( lines 155-225 )
+2. Array...Puzzle.h ( line 15 )
+3. Use of a disk file...15Puzzle.cpp ( lines 90-101 and 32-45 )
+4.A LA CARTE
+	A. non-const class data members...Puzzle.h(lines 17-20)...3 occurances, 3 points claimed
+	B. accessor functions...Puzzle.cpp (lines 39-61)...5 occurances, 5 points claimed
+	C. non-accessor class member functions...Puzzle.h ( lines 36-39, 47-49 )...4 occurances, 8 points claimed
+	D. Read or write data to disk using operator overloaded function...15Puzzle.cpp ( lines 40, 99 )...2 occurances, 6 points claimed
+	E. Overloaded member functions ...Puzzle.h ( lines 36, 37 )...1 occurance, 1 point claimed
+	F. Multidimentional array of ints...Puzzle.h ( line 15 )...1 occurance, 2 points claimed
+	G. Incorporate user-specified file names...15Puzzle.cpp ( lines 33, 93 )...2 occurances, 2 points claimed
+	H. Sort multidimentional array...Puzzle.cpp ( lines 228-241 )...1 occurance, 4 points claimed
+	I. Shuffle a 2dimentional array...Puzzle.cpp ( lines 244-266 )...1 occurance, 3 points claimed??
+	J. Do-While loops...15Puzzle.cpp ( lines 47-60, 64-110 )...2 occurances, 2 points claimed
+36 points claimed total
+
+
+REFLECTIONS
+	This project made me realize how complex simple programs can be. I now realize how important it is to define a class so that the 
+main function is much more readable. I've learned that it is best to do things with the use of functions. This way, the logic can
+be extended farther than the application's initial intent. I've learned how if-then statements can be structured to provide clear
+directions to the user, and how counters can be implimented to deterine many different statistics. I've learned that programs like
+this are much too complex for a beginner programmer like myself to do in one sitting. It is necessary to work incrimently so that 
+it is easier to debugg and find errors. I've also learned other debugging techniques which include using many extra cout statements 
+at different points along the program. These statements can help the programmer figure out exactly where the program went wrong.
+Once the program is working, simply comment out of these extra cout statements so that they don't show up on the final project but
+so that they can be used again later if need be. I've also learned the importance to come up with practical names of variables and 
+functions. Eventually, there comes to be so many variables declaired that if they do not have proper names, it is easy to get them
+mixed up. 
+	We have both learned the importance of teamwork and cooperation. A single programmer can write a program, but if two people work 
+together, the task is accomplished much faster. Having two brains working at once, provides different aspects and methods of
+accomplishing a common task. This way, the easier method is always used and the amount of programming necessary is minimized.
+We've also learned that it is necessary to program together. If one person works alone, it is difficult for the other programmer
+to catch up and understand the changes that have been made. If this technique absolutely must be used, it is necessary to provide
+extensive comments throughout the application to explain the changes that have been made. Through teamwork, a better, more complex,
+and more exciting program was written than either one of us could have written alone. 
+	If I had to do another project, I would be sure to work in small steps and test the functions often. This would make the debugging
+tasks at the end of the application go much faster.
